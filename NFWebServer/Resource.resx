@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="favicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\favicon.ico;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Slide1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Slide1.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Slide10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Slide10.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slide10html" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;&lt;title&gt;.Net Robotics&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img width="100%"src="slides/Slide10.png"/&gt;&lt;script&gt;window.onkeydown=function(e){switch(e.keyCode){case 33:window.location='slide9.html';break;case 34:window.location='slide11.html';break;default:console.log(e.keyCode);break;}};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="Slide11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Slide11.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slide11html" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;&lt;title&gt;.Net Robotics&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img width="100%"src="slides/Slide11.png"/&gt;&lt;script&gt;window.onkeydown=function(e){switch(e.keyCode){case 33:window.location='slide10.html';break;case 34:window.location='slide12.html';break;default:console.log(e.keyCode);break;}};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="Slide12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Slide12.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slide12html" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;&lt;title&gt;.Net Robotics&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img width="100%"src="slides/Slide12.png"/&gt;&lt;script&gt;window.onkeydown=function(e){switch(e.keyCode){case 33:window.location='slide11.html';break;case 34:window.location='slide13.html';break;default:console.log(e.keyCode);break;}};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="Slide13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Slide13.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slide13html" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;&lt;title&gt;.Net Robotics&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img width="100%"src="slides/Slide13.png"/&gt;&lt;script&gt;window.onkeydown=function(e){switch(e.keyCode){case 33:window.location='slide12.html';break;case 34:window.location='slide14.html';break;default:console.log(e.keyCode);break;}};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="Slide14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Slide14.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slide14html" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;&lt;title&gt;.Net Robotics&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img width="100%"src="slides/Slide14.png"/&gt;&lt;script&gt;window.onkeydown=function(e){switch(e.keyCode){case 33:window.location='slide13.html';break;case 34:window.location='slide15.html';break;default:console.log(e.keyCode);break;}};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="Slide15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Slide15.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slide15html" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;&lt;title&gt;.Net Robotics&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img width="100%"src="slides/Slide15.png"/&gt;&lt;script&gt;window.onkeydown=function(e){switch(e.keyCode){case 33:window.location='slide14.html';break;case 34:window.location='slide16.html';break;default:console.log(e.keyCode);break;}};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="Slide16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Slide16.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slide16html" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;&lt;title&gt;.Net Robotics&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img width="100%"src="slides/Slide16.png"/&gt;&lt;script&gt;window.onkeydown=function(e){switch(e.keyCode){case 33:window.location='slide15.html';break;case 34:window.location='slide17.html';break;default:console.log(e.keyCode);break;}};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="Slide17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Slide17.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slide17html" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;&lt;title&gt;.Net Robotics&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img width="100%"src="slides/Slide17.png"/&gt;&lt;script&gt;window.onkeydown=function(e){switch(e.keyCode){case 33:window.location='slide16.html';break;case 34:window.location='#';break;default:console.log(e.keyCode);break;}};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="Slide18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Slide18.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slide18html" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;&lt;title&gt;Document&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img width="100%"src="slides/Slide18.png"/&gt;&lt;script&gt;window.onkeydown=function(e){switch(e.keyCode){case 33:window.location='slide17.html';break;case 34:window.location='#';break;default:console.log(e.keyCode);break;}};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="slide1html" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;&lt;title&gt;.NET Robotics&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img width="100%"src="slides/Slide1.SVG"/&gt;&lt;script&gt;window.onkeydown=function(e){switch(e.keyCode){case 33:window.location='#';break;case 34:window.location='slide2.html';break;default:console.log(e.keyCode);break;}};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="Slide2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Slide2.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slide2html" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;&lt;title&gt;.Net Robotics&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img width="100%"src="slides/Slide2.png"/&gt;&lt;script&gt;window.onkeydown=function(e){switch(e.keyCode){case 33:window.location='slide1.html';break;case 34:window.location='slide3.html';break;default:console.log(e.keyCode);break;}};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="Slide3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Slide3.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slide3html" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;&lt;title&gt;.Net Robotics&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img width="100%"src="slides/Slide3.png"/&gt;&lt;script&gt;window.onkeydown=function(e){switch(e.keyCode){case 33:window.location='slide2.html';break;case 34:window.location='slide4.html';break;default:console.log(e.keyCode);break;}};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="Slide4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Slide4.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slide4html" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;&lt;title&gt;.Net Robotics&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img width="100%"src="slides/Slide4.png"/&gt;&lt;script&gt;window.onkeydown=function(e){switch(e.keyCode){case 33:window.location='slide3.html';break;case 34:window.location='slide5.html';break;default:console.log(e.keyCode);break;}};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="Slide5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Slide5.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slide5html" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;&lt;title&gt;.Net Robotics&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img width="100%"src="slides/Slide5.png"/&gt;&lt;script&gt;window.onkeydown=function(e){switch(e.keyCode){case 33:window.location='slide4.html';break;case 34:window.location='slide6.html';break;default:console.log(e.keyCode);break;}};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="Slide6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Slide6.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slide6html" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;&lt;title&gt;.Net Robotics&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img width="100%"src="slides/Slide6.png"/&gt;&lt;script&gt;window.onkeydown=function(e){switch(e.keyCode){case 33:window.location='slide5.html';break;case 34:window.location='slide7.html';break;default:console.log(e.keyCode);break;}};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="Slide7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Slide7.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slide7html" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;&lt;title&gt;.Net Robotics&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img width="100%"src="slides/Slide7.png"/&gt;&lt;script&gt;window.onkeydown=function(e){switch(e.keyCode){case 33:window.location='slide6.html';break;case 34:window.location='slide8.html';break;default:console.log(e.keyCode);break;}};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="Slide8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Slide8.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slide8html" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;&lt;title&gt;.Net Robotics&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img width="100%"src="slides/Slide8.png"/&gt;&lt;script&gt;window.onkeydown=function(e){switch(e.keyCode){case 33:window.location='slide7.html';break;case 34:window.location='slide9.html';break;default:console.log(e.keyCode);break;}};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="Slide9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Slide9.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slide9html" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;&lt;title&gt;.Net Robotics&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img width="100%"src="slides/Slide9.png"/&gt;&lt;script&gt;window.onkeydown=function(e){switch(e.keyCode){case 33:window.location='slide8.html';break;case 34:window.location='slide10.html';break;default:console.log(e.keyCode);break;}};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+</root>

@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "WiFiRelay", "WiFiRelay\WiFiRelay.nfproj", "{C87144DA-F92A-458C-B526-A15DC33C84CF}"
+EndProject
+Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "AirQuality", "AirQuality\AirQuality.nfproj", "{BC209941-CD87-48EC-8540-BAB1F8D116C0}"
+EndProject
+Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "NFWebServer", "NFWebServer\NFWebServer.nfproj", "{178C8638-EDF9-45A4-924F-7C6CE85C78CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C831A1C0-2304-43A9-9D7B-E7C5BFD8FBFB}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C87144DA-F92A-458C-B526-A15DC33C84CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C87144DA-F92A-458C-B526-A15DC33C84CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C87144DA-F92A-458C-B526-A15DC33C84CF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C87144DA-F92A-458C-B526-A15DC33C84CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C87144DA-F92A-458C-B526-A15DC33C84CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C87144DA-F92A-458C-B526-A15DC33C84CF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BC209941-CD87-48EC-8540-BAB1F8D116C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC209941-CD87-48EC-8540-BAB1F8D116C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC209941-CD87-48EC-8540-BAB1F8D116C0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BC209941-CD87-48EC-8540-BAB1F8D116C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC209941-CD87-48EC-8540-BAB1F8D116C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC209941-CD87-48EC-8540-BAB1F8D116C0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{178C8638-EDF9-45A4-924F-7C6CE85C78CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{178C8638-EDF9-45A4-924F-7C6CE85C78CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{178C8638-EDF9-45A4-924F-7C6CE85C78CF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{178C8638-EDF9-45A4-924F-7C6CE85C78CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{178C8638-EDF9-45A4-924F-7C6CE85C78CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{178C8638-EDF9-45A4-924F-7C6CE85C78CF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CA32DB61-2C7A-435C-AD24-09CAA03F53FE}
+	EndGlobalSection
+EndGlobal
