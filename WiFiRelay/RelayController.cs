@@ -6,10 +6,21 @@ using System.Text;
 
 namespace WiFiRelay
 {
+    /// <summary>
+    /// HTTP request handler
+    /// </summary>
     public class RelayController
     {
+        /// <summary>
+        /// Block other treads from using GPIO
+        /// </summary>
         private static readonly object _lock = new();
 
+        /// <summary>
+        /// relays endpoint handler
+        /// returns state of both relays
+        /// </summary>
+        /// <param name="e">Request parameters</param>
         [Route("relays")]
         public void Get(WebServerEventArgs e)
         {
@@ -21,18 +32,31 @@ namespace WiFiRelay
             WebServer.OutPutStream(e.Context.Response, ret);
         }
 
+        /// <summary>
+        /// Change state to ON
+        /// </summary>
+        /// <param name="e">Request parameters</param>
         [Route("relay/on")]
         public void PutOn(WebServerEventArgs e)
         {
             SetPinValue(e, PinValue.High);
         }
 
+        /// <summary>
+        /// Change state to OFF
+        /// </summary>
+        /// <param name="e">Request parameters</param>
         [Route("relay/off")]
         public void PutOff(WebServerEventArgs e)
         {
             SetPinValue(e, PinValue.Low);
         }
 
+        /// <summary>
+        /// Sets GPIO value
+        /// </summary>
+        /// <param name="e">Request parameters</param>
+        /// <param name="pinValue">Value to set</param>
         private void SetPinValue(WebServerEventArgs e, PinValue pinValue)
         {
             bool requestIsValid = false;
@@ -80,6 +104,11 @@ namespace WiFiRelay
             }
         }
 
+        /// <summary>
+        /// Get parameters from request
+        /// </summary>
+        /// <param name="e">Request parameters</param>
+        /// <returns></returns>
         private UrlParameter[] GetParameters(WebServerEventArgs e)
         {
             var parameters = WebServer.DecodeParam(e.Context.Request.RawUrl);

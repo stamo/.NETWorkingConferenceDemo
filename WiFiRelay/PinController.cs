@@ -3,14 +3,34 @@ using System.Device.Gpio;
 
 namespace WiFiRelay
 {
+    /// <summary>
+    /// Controlls GPIO pins
+    /// </summary>
     public static class PinController
     {
+        /// <summary>
+        /// nanoFramework GPIO Controller
+        /// </summary>
         private static GpioController gpioController;
+
+        /// <summary>
+        /// Controll pin of the first relay
+        /// </summary>
         private static GpioPin firstRelay;
+
+        /// <summary>
+        /// Controll pin of the second relay
+        /// </summary>
         private static GpioPin secondRelay;
 
+        /// <summary>
+        /// Both relays state
+        /// </summary>
         public static RelayState State { get; set; } = new RelayState();
 
+        /// <summary>
+        /// First relay
+        /// </summary>
         public static GpioPin FirstRelay
         { 
             get 
@@ -24,6 +44,9 @@ namespace WiFiRelay
             }
         }
 
+        /// <summary>
+        /// Second relay
+        /// </summary>
         public static GpioPin SecondRelay
         {
             get
@@ -37,6 +60,10 @@ namespace WiFiRelay
             }
         }
 
+        /// <summary>
+        /// Initializes controlling pins
+        /// Sets both states to OFF
+        /// </summary>
         private static void InitializeRelay()
         {
             gpioController = new GpioController();
