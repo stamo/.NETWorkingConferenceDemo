@@ -4,7 +4,7 @@ This project is using Xiao ESP32C3 development board with two relays to control 
 
 ## Needed hardware
 
-1. Xiao ESP32Ce development board
+1. Xiao ESP32C3 development board
 2. Relay Click MIKROE-1370 dual relay Click board
 3. Two light bulbs with sockets
 4. Plug with cable
