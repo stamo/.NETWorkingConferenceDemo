@@ -7,6 +7,9 @@ using static NFWebServer.Resource;
 
 namespace NFWebServer
 {
+    /// <summary>
+    /// Web server serving my presentation
+    /// </summary>
     public class Program
     {
         private static bool isConnected = false;
@@ -17,6 +20,7 @@ namespace NFWebServer
 
             try
             {
+                // Connect to WiFi network
                 CancellationTokenSource cs = new(60000);
                 isConnected = WifiNetworkHelper.ConnectDhcp(Secrets.WiFiSsid, Secrets.WiFiPassword, requiresDateTime: true, token: cs.Token);
 
@@ -31,8 +35,10 @@ namespace NFWebServer
                     return;
                 }
 
+                // Create http web server on port 80
                 using (WebServer server = new WebServer(80, HttpProtocol.Http))
                 {
+                    // set event handler
                     server.CommandReceived += ServerCommandReceived;
 
                     // Start the server.
@@ -47,13 +53,20 @@ namespace NFWebServer
             }
         }
 
+        /// <summary>
+        /// Event handler to handle web requests
+        /// </summary>
+        /// <param name="source">Event source</param>
+        /// <param name="e">Event parameters</param>
         private static void ServerCommandReceived(object source, WebServerEventArgs e)
         {
             try
             {
+                // Get URL
                 var url = e.Context.Request.RawUrl;
                 Debug.WriteLine($"Command received: {url}, Method: {e.Context.Request.HttpMethod}");
 
+                // Actions to perferm
                 if (url.ToLower() == "/health")
                 {
                     // This is simple raw text returned
@@ -61,6 +74,7 @@ namespace NFWebServer
                 }
                 else if(url.ToLower().IndexOf("/favicon.ico") == 0)
                 {
+                    // File response
                     WebServer.SendFileOverHTTP(e.Context.Response, "favicon.ico", Resource.GetBytes(Resource.BinaryResources.favicon));
                 }
                 else if(url.ToLower().IndexOf("/slides/") == 0)
@@ -69,6 +83,7 @@ namespace NFWebServer
                     string resource = routes[1].Split('.')[0].ToLower();
                     byte[] svg = Resource.GetBytes(GetBinaryResouce(resource));
 
+                    // File (Picture) response
                     WebServer.SendFileOverHTTP(e.Context.Response, routes[1], svg);
                 }
                 else
@@ -76,6 +91,7 @@ namespace NFWebServer
                     var routes = url.TrimStart('/').Split('/');
                     string resource = string.Concat(routes[0].Split('.'));
 
+                    // String (HTML) response
                     WebServer.OutPutStream(e.Context.Response, Resource.GetString(GetStringResouce(resource)));
                 }
             }
@@ -85,6 +101,11 @@ namespace NFWebServer
             }
         }
 
+        /// <summary>
+        /// Get bunary resource from embeded resources
+        /// </summary>
+        /// <param name="resource">Resource name</param>
+        /// <returns></returns>
         private static BinaryResources GetBinaryResouce(string resource)
         {
             switch (resource) 
@@ -128,6 +149,11 @@ namespace NFWebServer
             }
         }
 
+        /// <summary>
+        /// Get string resource from embeded resources
+        /// </summary>
+        /// <param name="resource">Resource name</param>
+        /// <returns></returns>
         private static StringResources GetStringResouce(string resource)
         {
             switch (resource)
