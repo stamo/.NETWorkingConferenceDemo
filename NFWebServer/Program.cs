@@ -144,6 +144,8 @@ namespace NFWebServer
                     return BinaryResources.Slide16;
                 case "slide17":
                     return BinaryResources.Slide17;
+                case "slide18":
+                    return BinaryResources.Slide18;
                 default:
                     return BinaryResources.Slide1;
             }
@@ -192,6 +194,8 @@ namespace NFWebServer
                     return StringResources.slide16html;
                 case "slide17html":
                     return StringResources.slide17html;
+                case "slide18html":
+                    return StringResources.slide18html;
                 default:
                     return StringResources.slide1html;
             }
