@@ -170,7 +170,7 @@
     <value>Resources\Slide17.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="slide17html" xml:space="preserve">
-    <value>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;&lt;title&gt;.Net Robotics&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img width="100%"src="slides/Slide17.png"/&gt;&lt;script&gt;window.onkeydown=function(e){switch(e.keyCode){case 33:window.location='slide16.html';break;case 34:window.location='slide18.html';break;default:console.log(e.keyCode);break;}};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;&lt;title&gt;.Net Robotics&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img width="100%"src="slides/Slide17.png"/&gt;&lt;script&gt;window.onkeydown=function(e){switch(e.keyCode){case 33:window.location='slide16.html';break;case 34:window.location='#';break;default:console.log(e.keyCode);break;}};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
   </data>
   <data name="Slide18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Slide18.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
