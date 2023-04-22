@@ -18,13 +18,25 @@ namespace MindstormEV3
         private readonly BluetoothCommunication communication;
 
         /// <summary>
+        /// Pause between actions 
+        /// in order to avoid the impact of inertial forces
+        /// </summary>
+        private readonly TimeSpan pause = TimeSpan.FromMilliseconds(500);
+
+        /// <summary>
         /// Creates new robot instance
         /// </summary>
         /// <param name="port">Bluetooth port</param>
-        public Robot(string port)
+        /// <param name="pause">Pause between actions in order to avoid the impact of inertial forces</param>
+        public Robot(string port, TimeSpan? pause = null)
         {
             communication = new BluetoothCommunication(port);
             client = new MindstormsClient<BluetoothCommunication>(communication);
+
+            if (pause != null && pause.HasValue)
+            {
+                this.pause = pause.Value;
+            }
 
             client.ConnectAsync().Wait();
         }
@@ -51,7 +63,7 @@ namespace MindstormEV3
             client.TurnMotorAtPowerForTimeAsync(OutputPort.B, 100, time, true).Wait();
             client.TurnMotorAtPowerForTimeAsync(OutputPort.C, 100, time, true).Wait();
 
-            Thread.Sleep(distance * 50);
+            Thread.Sleep((distance * 50) + pause.Milliseconds);
 
             return this;
         }
@@ -69,7 +81,7 @@ namespace MindstormEV3
             client.TurnMotorAtPowerForTimeAsync(OutputPort.B, 100, time, true).Wait();
             client.TurnMotorAtPowerForTimeAsync(OutputPort.C, 100, time, true).Wait();
 
-            Thread.Sleep(distance * 50);
+            Thread.Sleep((distance * 50) + pause.Milliseconds);
 
             return this;
         }
@@ -85,7 +97,7 @@ namespace MindstormEV3
             client.TurnMotorAtPowerForTimeAsync(OutputPort.B, 100, 600, true).Wait();
             client.TurnMotorAtPowerForTimeAsync(OutputPort.C, 100, 600, true).Wait();
 
-            Thread.Sleep(600);
+            Thread.Sleep(600 + pause.Milliseconds);
 
             return this;
         }
@@ -101,7 +113,7 @@ namespace MindstormEV3
             client.TurnMotorAtPowerForTimeAsync(OutputPort.B, 100, 600, true).Wait();
             client.TurnMotorAtPowerForTimeAsync(OutputPort.C, 100, 600, true).Wait();
 
-            Thread.Sleep(600);
+            Thread.Sleep(600 + pause.Milliseconds);
 
             return this;
         }
