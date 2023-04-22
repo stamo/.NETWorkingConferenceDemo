@@ -12,6 +12,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C831A1C0-2304-43A9-9D7B-E7C5BFD8FBFB}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindstormEV3", "MindstormEV3\MindstormEV3.csproj", "{AC38DC4D-2189-4594-B9C7-A58B292B2651}"
