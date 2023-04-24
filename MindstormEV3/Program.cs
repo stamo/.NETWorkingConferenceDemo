@@ -2,9 +2,10 @@
 
 // Create new robot instance
 // Dispozes automatically when using statement ends
-using Robot robot = new Robot("COM11");
+using Robot robot = new Robot("COM10");
 
-robot.Forward(150)
+robot
+    .Forward(150)
     .TurnRight()
     .Forward(20)
     .Backward(30)

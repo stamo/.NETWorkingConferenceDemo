@@ -94,10 +94,10 @@ namespace MindstormEV3
         {
             client.SetMotorPolarityAsync(OutputPort.C, Polarity.Backward).Wait();
             client.SetMotorPolarityAsync(OutputPort.B, Polarity.Forward).Wait();
-            client.TurnMotorAtPowerForTimeAsync(OutputPort.B, 100, 600, true).Wait();
-            client.TurnMotorAtPowerForTimeAsync(OutputPort.C, 100, 600, true).Wait();
+            client.TurnMotorAtPowerForTimeAsync(OutputPort.B, 100, 700, true).Wait();
+            client.TurnMotorAtPowerForTimeAsync(OutputPort.C, 100, 700, true).Wait();
 
-            Thread.Sleep(600 + pause.Milliseconds);
+            Thread.Sleep(700 + pause.Milliseconds);
 
             return this;
         }
@@ -110,10 +110,10 @@ namespace MindstormEV3
         {
             client.SetMotorPolarityAsync(OutputPort.C, Polarity.Forward).Wait();
             client.SetMotorPolarityAsync(OutputPort.B, Polarity.Backward).Wait();
-            client.TurnMotorAtPowerForTimeAsync(OutputPort.B, 100, 600, true).Wait();
-            client.TurnMotorAtPowerForTimeAsync(OutputPort.C, 100, 600, true).Wait();
+            client.TurnMotorAtPowerForTimeAsync(OutputPort.B, 100, 700, true).Wait();
+            client.TurnMotorAtPowerForTimeAsync(OutputPort.C, 100, 700, true).Wait();
 
-            Thread.Sleep(600 + pause.Milliseconds);
+            Thread.Sleep(700 + pause.Milliseconds);
 
             return this;
         }
@@ -124,6 +124,7 @@ namespace MindstormEV3
         /// <returns></returns>
         public Robot Sing()
         {
+            //client.PlaySoundAsync(100, "Hello");
             var song = new StarWarsSong(client);
             song.Play().Wait();
 
